@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./swiper-bundle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="./swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./script.js" defer></script>
+    <script src="./cart.js"  defer></script>
+    <title>Multipage Ecommerce Website</title>
+</head>
+
+<!-- Demo styles -->
+<style>
+  
+  .slllider{
+padding: 3rem 1rem ;
+    
+    margin-top: -25rem;
+
+  }
+ 
+    .swiper {
+     
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 2rem;
+      gap: 1rem;
+    }
+
+  
+
+
+
+.cards img{
+    height: 250px;
+    width: 220px;
+
+}
+.cards h1{
+    font-size: .9rem;
+}
+
+.swiperBtn{
+background: #fff;
+border-radius: 50%;
+height: 20px;
+width: 20px;
+color: #DC4345;
+font-weight: bold;
+margin: 0 -.7rem;
+
+}
+
+.swiper-pagination{
+    padding-bottom: -5rem;
+}
+
+
+
+  </style>
+
+
+<body>
+
+   
+
+    <div class="container">
+
+
+            <!-- /////////////  Navbar section  ///////////////// -->
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <h1>Exclusive</h1>
+            </div>
+    
+            <div class="nav-items">
+                <ul>
+                    <li><a href="./index.html" class="active">Home </a></li>
+                    <li><a href="./contact.html">Contact </a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./signup.html">Sign Up </a></li>
+                </ul>
+            </div>
+    
+            <div class="icons">
+                <form action="">
+                    <input type="text"
+                    placeholder="What are you looking for?"
+                        id="search"
+                    >
+                   
+                  
+                    
+                </form>
+                <a href="./cart.html">
+                 <img src="./imges/cart2.png" id="cart"  alt="">
+                </a>
+                <img src="./imges/Vector-1.png" id="heart"   alt="">
+                
+    
+            </div>
+    
+        </nav>
+        
+
+        <header class="header-section">
+            <div class="header-imges">
+                <div class="img-1">
+                    <img src="./imges/ccee74a509c6f42fbdada133ab8e702e.jpg" alt="">
+                </div>
+              <div class="img-2">
+                <img src="./imges/4beac1a2ceb6ff197cd14c57547d5356.jpg" alt="">
+              </div>
+               
+            </div> 
+
+                <div class="par-2">
+
+                     <button class="headerBtn">
+                      <a href="Women.html">Shop for Women</a>
+                    </button>
+                    <button class="headerBtn">
+                     <a href="men.html">Shop for Men</a>
+                    </button>
+
+                </div>
+           
+
+        </header>
+        
+
+ 
+        <!-- /////////////  Sales section  ///////////////// -->
+
+        <section class="section  same">
+
+            <div class="flashSales">
+
+
+
+                <div class="counter">
+
+                    <h1>Sales Sales  Sales</h1>
+                    
+                    <div class="title" id="end-date" style="display: none;"></div>
+
+                     <div class="col" >
+
+                        
+                        <div>
+                            <input  class="input"   type="text" readonly value="0">
+                            <span class="red" style="font-size: 2rem;">:</span>
+                            <br>
+                            <label for="">Days</label>
+                            
+                        </div>
+                       
+                        <div>
+                            <input   class="input"  type="text" readonly value="0">
+                            <span class="red" style="font-size: 2rem;">:</span>
+                            <br>
+                            <label for="">Hours</label>
+                        </div>
+
+                        <div>
+                            <input   class="input"   type="text" readonly value="0">
+                            <span class="red" style="font-size: 2rem;">:</span>
+                            <br>
+                            <label for="">Minutes</label>
+                        </div>
+
+                        <div>
+                            <input  class="input"  type="text" readonly value="0">
+                            <span class="white" style="font-size: 2rem;">:</span>
+                            <br>
+                            <label for="">Seconds</label>
+                        </div>
+
+                     </div>
+
+
+                </div>
+
+              
+
+            </div>
+
+
+        </section>
+
+
+
+
+            <!-- ////////////  SLIDER nhi raha ///////////////// -->
+
+
+            <section class="Slider same">
+
+                <h1>Flash Sales</h1>
+
+                <div class="slides ">
+
+                    <div class="card">
+                        <img src="./imges/images (7).jpg" alt="">
+                        <h1>Stylish Dress</h1>
+                        <p class="red">$120<span class="cut"><del>$160</del></span></p>
+                       
+
+                        <div class="stars">
+                            <a><i class="fas fa-star"></i></a>
+                            <a><i class="fas fa-star"></i></a>
+                            <a><i class="fas fa-star"></i></a>
+                            <a><i class="fas fa-star"></i></a>
+                            <a><i class="fas fa-star"></i></a>
+                            <span class="rating">(88)</span>
+                        </div>
+
+
+
+                        <button class="add-to-cart"
+                            data-id="1"
+                            data-title="Stylish Dress"
+                            data-image="./imges/images (7).jpg"
+                            data-price="120"
+                        >Add to Cart</button>
+                      
+                    </div>
+                  
+
+                    <div class="card">
+                        <img src="./imges/casual-dress-code-men-style-adidas-jacket-luxe-digital.jpg.webp" alt="">
+                        <h1>casual-dress</h1>
+                        <p class="red">$370<span class="cut"><del>$400</del></span></p>
+                     
+
+                        
+                        <div class="stars">
+                            <a><i class="fas fa-star"></i></a>
+                            <a><i class="fas fa-star"></i></a>
+                            <a><i class="fas fa-star"></i></a>
+                            <a><i class="fas fa-star"></i></a>
+                            <a><i class="fas fa-star"></i></a>
+                            <span class="rating">(88)</span>
+                        </div>
+
+                        <button class="add-to-cart"
+                        data-id="2"
+                        data-title="casual-dress"
+                        data-image="./imges/casual-dress-code-men-style-adidas-jacket-luxe-digital.jpg.webp"
+                        data-price="$370"
+                    >Add to Cart</button>
+                    </div>
+
+                    <div class="card">
+                        <img src="./imges/5geu8_512.webp" alt="">
+                        <h1>New Style Shirt</h1>
+                        <p class="red">$960<span class="cut"><del>$1160</del></span></p>
+                        
+                        <div class="stars">
+                            <a><i class="fas fa-star"></i></a>
+                            <a><i class="fas fa-star"></i></a>
+                            <a><i class="fas fa-star"></i></a>
+                            <a><i class="fas fa-star"></i></a>
+                            <a><i class="fas fa-star"></i></a>
+                            <span class="rating">(88)</span>
+                        </div>
+
+
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+
+
+                    <div class="card">
+                        <img src="./imges/casual-dress-code-men-style-tom-ford-polo-shirt-luxe-digital.jpg.webp" alt="">
+                        <h1>Polo-shirt</h1>
+                        <p class="red">$370<span class="cut"><del>$400</del></span></p>
+                  
+                        <div class="stars">
+                            <a><i class="fas fa-star"></i></a>
+                            <a><i class="fas fa-star"></i></a>
+                            <a><i class="fas fa-star"></i></a>
+                            <a><i class="fas fa-star"></i></a>
+                            <a><i class="fas fa-star"></i></a>
+                            <span class="rating">(88)</span>
+                        </div>
+
+
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+
+                      
+
+                </div>
+
+                
+
+                <div class="button">
+                    <a href="./explore.html">View All Products</a>
+                    </div>
+
+            </section>
+
+
+
+
+
+
+            
+
+<!-- ////////////////////////////      main slider//////////////////////// -->
+
+<div class="line"><hr></div>
+
+
+
+
+
+<section class="selling   same">
+
+
+    <div class="top-part">
+
+        <div class="sales">
+            <p class="orange">This month</p>
+
+            <h1>Best Selling Products</h1>
+        </div>
+
+    
+
+        <div class="btn">
+            <a href="">View All</a>
+        </div>
+
+
+
+    </div>
+
+
+</section>
+
+
+<section class="slllider">
+
+
+
+
+
+<!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+
+      <div class="swiper-slide">
+
+          <div class="cards">
+          <img src="../imges/Cart.png" alt="">
+          <h1>The north coart</h1>
+          <p class="red">$120<span class="cut"><del>$160</del></span></p>
+          
+          <div class="stars">
+            <a><i class="fas fa-star"></i></a>
+            <a><i class="fas fa-star"></i></a>
+            <a><i class="fas fa-star"></i></a>
+            <a><i class="fas fa-star"></i></a>
+            <a><i class="fas fa-star"></i></a>
+            <span class="rating">(88)</span>
+        </div>
+
+          </div>
+
+          <div class="cards">
+          <img src="../imges/Cart-1.png" alt="">
+          <h1>duffle bag</h1>
+          <p class="red">$370<span class="cut"><del>$400</del></span></p>
+         
+          <div class="stars">
+            <a><i class="fas fa-star"></i></a>
+            <a><i class="fas fa-star"></i></a>
+            <a><i class="fas fa-star"></i></a>
+            <a><i class="fas fa-star"></i></a>
+            <a><i class="fas fa-star"></i></a>
+            <span class="rating">(88)</span>
+        </div>
+
+          </div>
+
+          <div class="cards">
+          <img src="./imges/3269c752ab82ae2439b195e8c7094780.jpg" alt="">
+          <h1>Stylish Frock</h1>
+          <p class="red">$960<span class="cut"><del>$1160</del></span></p>
+          
+          <div class="stars">
+            <a><i class="fas fa-star"></i></a>
+            <a><i class="fas fa-star"></i></a>
+            <a><i class="fas fa-star"></i></a>
+            <a><i class="fas fa-star"></i></a>
+            <a><i class="fas fa-star"></i></a>
+            <span class="rating">(88)</span>
+        </div>
+
+           </div>
+
+
+           <div class="cards">
+          <img src="./imges/rbdos_512.webp" alt="">
+          <h1>Shirt Design</h1>
+          <p class="red">$370<span class="cut"><del>$400</del></span></p>
+          
+          <div class="stars">
+            <a><i class="fas fa-star"></i></a>
+            <a><i class="fas fa-star"></i></a>
+            <a><i class="fas fa-star"></i></a>
+            <a><i class="fas fa-star"></i></a>
+            <a><i class="fas fa-star"></i></a>
+            <span class="rating">(88)</span>
+        </div>
+
+
+          </div>
+     
+
+
+
+      </div>
+
+      <div class="swiper-slide">
+
+        <div class="cards">
+        <img src="../imges/Cart.png" alt="">
+        <h1>The north coart</h1>
+        <p class="red">$120<span class="cut"><del>$160</del></span></p>
+        
+        <div class="stars">
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <span class="rating">(88)</span>
+      </div>
+
+        </div>
+
+        <div class="cards">
+        <img src="../imges/Cart-1.png" alt="">
+        <h1>duffle bag</h1>
+        <p class="red">$370<span class="cut"><del>$400</del></span></p>
+       
+        <div class="stars">
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <span class="rating">(88)</span>
+      </div>
+
+        </div>
+
+        <div class="cards">
+            <img src="./imges/3269c752ab82ae2439b195e8c7094780.jpg" alt="">
+            <h1>Stylish Frock</h1>
+        <p class="red">$960<span class="cut"><del>$1160</del></span></p>
+        
+        <div class="stars">
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <span class="rating">(88)</span>
+      </div>
+
+         </div>
+
+
+         <div class="cards">
+            <img src="./imges/rbdos_512.webp" alt="">
+          <h1>Shirt Design</h1>
+        <p class="red">$370<span class="cut"><del>$400</del></span></p>
+        
+        <div class="stars">
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <span class="rating">(88)</span>
+      </div>
+
+
+        </div>
+   
+
+
+
+    </div>
+
+
+    <div class="swiper-slide">
+
+        <div class="cards">
+        <img src="../imges/Cart.png" alt="">
+        <h1>The north coart</h1>
+        <p class="red">$120<span class="cut"><del>$160</del></span></p>
+        
+        <div class="stars">
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <span class="rating">(88)</span>
+      </div>
+
+        </div>
+
+        <div class="cards">
+        <img src="../imges/Cart-1.png" alt="">
+        <h1>duffle bag</h1>
+        <p class="red">$370<span class="cut"><del>$400</del></span></p>
+       
+        <div class="stars">
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <span class="rating">(88)</span>
+      </div>
+
+        </div>
+
+        <div class="cards">
+            <img src="./imges/3269c752ab82ae2439b195e8c7094780.jpg" alt="">
+            <h1>Stylish Frock</h1>
+        <p class="red">$960<span class="cut"><del>$1160</del></span></p>
+        
+        <div class="stars">
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <span class="rating">(88)</span>
+      </div>
+
+         </div>
+
+
+         <div class="cards">
+            <img src="./imges/rbdos_512.webp" alt="">
+          <h1>Shirt Design</h1>
+        <p class="red">$370<span class="cut"><del>$400</del></span></p>
+        
+        <div class="stars">
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <a><i class="fas fa-star"></i></a>
+          <span class="rating">(88)</span>
+      </div>
+
+
+        </div>
+   
+
+
+
+    </div>
+
+
+
+
+      
+      
+    </div>
+    <div class="swiper-button-next  swiperBtn"></div>
+    <div class="swiper-button-prev  swiperBtn"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+
+
+</section>
+
+
+
+
+
+<!-- ///////////////  bg img /////////////////// -->
+
+        <section  class=" same">
+
+
+         <div class="bgimg">
+            <img src="./imges/jfahxqp0-720.jpg" alt="">
+         </div>
+
+
+        </section>
+
+
+
+
+<!-- ///////////////  arrival /////////////////// -->
+
+        <section class="arrival   same">
+
+
+            <div class="top-part">
+        
+                <div class="sales">
+                    <p class="orange">Featured </p>
+                    <h1>New Arrival</h1>
+                </div>
+        
+            </div>
+
+
+            <div class="gridcontainer">
+
+                <div class="allimges">
+
+                <div class="img1">
+                    <img src="./imges/Hangers_blog-1.webp" alt="">
+                </div>
+
+
+                <div class="img2">
+                    <img src="./imges/row-woman-fashion-clothes-different-260nw-1730759308.webp" alt="">
+                </div>
+
+                <div class="img3">
+                    <img src="./imges/images (6).jpg" alt="">
+                </div>
+
+
+                <div class="img4">
+                    <img src="./imges/rbdos_512.webp" alt="">
+                </div>
+
+              </div>
+
+            </div>
+
+
+        </section>
+
+
+
+
+        
+<!-- /* //////// sub section  ////////////// */ -->
+
+
+
+<section class="sub   same">
+
+
+<div class="subsect">
+
+<div class="sec1">
+    <img src="./imges/Services.png" alt="">
+    <h3>FREE AND FAST DELIVERY</h3>
+    <P>Free Deliver for all orders over $140</P>
+</div>
+
+
+<div class="sec2">
+    <img src="./imges/Services-1.png" alt="">
+    <h3>FREE AND FAST DELIVERY</h3>
+    <P>Free Deliver for all orders over $140</P>
+</div>
+
+
+
+<div class="sec2">
+    <img src="./imges/Services-2.png" alt="">
+    <h3>FREE AND FAST DELIVERY</h3>
+    <P>Free Deliver for all orders over $140</P>
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ///////////////////   footer  //////////////// -->
+
+
+
+
+    </div>
+
+
+    <footer >
+
+        <div class="lastsection">
+            
+        <div class="last1">
+            <h1>Exclusive</h1>
+            <p>Subscribe</p>
+            <p>Get 10% off your first order</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, neque?</p>
+        </div>
+        
+        <div class="last2">
+            <h1>Support</h1>
+            <p>Stockholm , Sweden</p>
+            <p>exclusive@gmail.com</p>
+            <p>+888-678-546</p>
+            <p>+7687-877779-98</p>
+        </div>
+        
+        <div class="last3">
+            <h1>Account</h1>
+            <p>My Account</p>
+            <p>Login / Register</p>
+            <p>Cart</p>
+            <p>Wishlist</p>
+            <p>Shop</p>
+        </div>
+        
+        
+        <div class="last4">
+            <h1>Quick Link</h1>
+            <p>Privacy Policy</p>
+            <p>Term of use</p>
+            <p>FAQ</p>
+            <p>Contact</p>
+        </div>
+        
+        
+        </div>
+        
+       <div class="copyright">
+        <p>Copyright Exclusive 2023.  All right  reserved</p>
+       </div>
+        
+        
+        
+        </footer>
+   
+</body>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</html>
